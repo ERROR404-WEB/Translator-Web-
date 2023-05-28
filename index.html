@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Silkscreen&display=swap');
+
+        body {
+            margin-top: 2%;
+            text-align: center;
+           background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: 'DynaPuff', cursive;
+            height: 100vh;
+
+        }
+
+        @media(max-width:700px) {
+           input{
+            height: 50px;
+            width: 10px;
+           }
+           
+        }
+
+        input {
+            background: none;
+            height: 50px;
+            width: 500px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.817);
+            transition: 0.5s;
+        }
+
+        select {
+            text-align: center;
+            background-color: rgba(251, 251, 251, 0.534);
+            height: 30px;
+            width: 100px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.817);
+            padding-left: 1px;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+
+        button {
+            background-color: rgba(251, 251, 251, 0.71);
+            height: 30px;
+            width: 100px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.817);
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        input:focus {
+            outline: none;
+            width: 520px;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            text-shadow: 0px 0px 10px white;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <h1>Translator</h1>
+    <br>
+    <form method="post" action="/">
+        <input type="text" name="source" placeholder="   Enter Text">
+        <br><br>
+        <label for="target">
+            <h3 style="display:inline;">Select Language to which you want to Translate</h3>
+        </label>
+        <select name="target" class="drop">
+            <option value="en"> English</option>
+            <option value="te"> Telugu</option>
+            <option value="hi"> Hindi</option>
+            <option value="gu"> Gujarati</option>
+            <option value="bn"> Bengali </option>
+            <option value="ar"> Arabic</option>
+            <option value="ja"> Japanese</option>
+            <option value="fr"> French </option>
+            <option value="es"> Spanish </option>
+            <option value="ko"> Korean </option>
+
+        </select>
+        <br>
+        <br>
+        <button type="submit" name="btn">Translate</button>
+    </form>
+</body>
+
+</html>
